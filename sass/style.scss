@@ -1,6 +1,6 @@
 $max: 766px;
 // $blue: rgb(83, 157, 192);
-$blue: #2b88b4;
+$blue: #84a2ba;
 $orange: #f7941f;
 section {
     background: #84a2ba;
@@ -24,6 +24,7 @@ section {
     background: #84a2ba;
     @media screen and (max-width: 766px) {
         height: 70vh;
+        z-index: 101;
     }
     &__car {
         width: 720px;
@@ -31,8 +32,10 @@ section {
         margin: 0px auto;
         display: block;
         position: relative;
+        background: #84a2ba;
+        // z-index: 101;
         @media screen and (max-width: 766px) {
-            width: 90%;
+            width: 100%;
         }
         h1 {
             font-weight: 500;
@@ -83,6 +86,7 @@ section {
 }
 
 .paragraph {
+    background: $blue;
     p {
         font-size: 16px;
         @media screen and (max-width: 766px) {
@@ -90,7 +94,8 @@ section {
         }
     }
     @media screen and (max-width: 766px) {
-        padding-top: 16px;
+        padding: 16px 0;
+        z-index: 101;
     }
     position: relative;
 }
@@ -364,11 +369,11 @@ small {
             &.samp8 {
                 background-image: url("../img/2.jpg");
             }
-            height: 100vh;
+            height: 70vh;
             position: fixed;
             left: 0;
             width: 40%;
-            top: 0;
+            top: 10%;
             mix-blend-mode: multiply;
             background-size: cover;
             background-repeat: no-repeat;
@@ -513,5 +518,68 @@ small {
     }
     &.blue-bg {
         background: rgb(60, 0, 255);
+    }
+}
+
+.usp {
+    @media screen and (max-width: 766px) {
+        position: relative;
+        z-index: 101;
+        background: $blue;
+    }
+    .all {
+        display: block;
+        margin: 0 auto;
+        .card {
+            display: inline-block;
+            width: 30%;
+            height: 200px;
+            margin: 8px;
+            border-radius: 16px;
+            text-align: center;
+            padding: 8px;
+            position: relative;
+            @media screen and (max-width: 766px) {
+                width: 100%;
+            }
+            &::before {
+                content: "";
+                background: rgba($color: #000, $alpha: 0.6);
+                position: absolute;
+                left: 0;
+                right: 0;
+                border-radius: 16px;
+                top: 0;
+                bottom: 0;
+                z-index: 4;
+            }
+            &__help {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                top: 0;
+                z-index: 2;
+                right: 0;
+                // background: rgba($color: #000000, $alpha: 0.6);
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 16px;
+                }
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                position: absolute;
+                bottom: 8px;
+                left: 8px;
+                z-index: 21;
+            }
+            h3,
+            p {
+                color: white;
+            }
+        }
     }
 }
