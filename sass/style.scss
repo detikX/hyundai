@@ -449,6 +449,33 @@ small {
 .scroll-magic {
     transition: all 0.3s ease-in;
     /* the slides */
+    .slick-dots {
+        bottom: 4px;
+        li {
+            &.slick-active {
+                button {
+                    &::before {
+                        color: #fff;
+                        font-size: 39px;
+                        content: "";
+                        width: 20px;
+                        height: 3px;
+                        background-color: #fff;
+                    }
+                }
+            }
+            button {
+                &::before {
+                    color: #fff;
+                    font-size: 39px;
+                    content: "";
+                    width: 20px;
+                    height: 3px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
     .slick-slide {
         margin: 0 16px;
     }

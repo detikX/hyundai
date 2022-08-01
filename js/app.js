@@ -21,7 +21,7 @@ $(() => {
     // });
 });
 
-var test = screen.width < 768 ? 2 : 10;
+var test = screen.width < 768 ? 2 : 50;
 
 $(window)
     .scroll(function() {
