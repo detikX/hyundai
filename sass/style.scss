@@ -20,7 +20,7 @@ section {
     width: auto;
     padding: 0;
     position: relative;
-    z-index: 9;
+    z-index: 2;
     background: #84a2ba;
     @media screen and (max-width: 766px) {
         height: 70vh;
@@ -344,25 +344,25 @@ small {
         display: flex;
         &-inner {
             &.samp1 {
-                background-image: url("../img/intro.jpg");
+                background-image: url("../img/1.webp");
                 // display: ;
                 opacity: 0 !important;
                 display: none !important;
             }
             &.samp2 {
-                background-image: url("../img/intro.jpg");
+                background-image: url("../img/1.webp");
             }
             &.samp3 {
-                background-image: url("../img/intro.jpg");
+                background-image: url("../img/2.jpg");
             }
             &.samp4 {
-                background-image: url("../img/intro.jpg");
+                background-image: url("../img/2.jpg");
             }
             &.samp5 {
-                background-image: url("../img/intro.jpg");
+                background-image: url("../img/1.webp");
             }
             &.samp8 {
-                background-image: url("../img/ban.jpg");
+                background-image: url("../img/2.jpg");
             }
             height: 100vh;
             position: fixed;
