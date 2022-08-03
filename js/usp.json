@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "judul": "Ambient Mood Light",
+    "coloring": "bg-soft",
+    "image": "img/ambien.jpg"
+  },
+  {
+    "id": 2,
+    "judul": "Head Unit Audio berukuran 8",
+    "coloring": "bg-soft",
+    "image": "img/1.webp"
+  },
+  {
+    "id": 3,
+    "judul": "Captain Seat",
+    "coloring": "bg-soft",
+    "image": "img/3.jpg"
+  },
+  {
+    "id": 4,
+    "judul": "Multifunctional Storage Space",
+    "coloring": "bg-soft",
+    "image": "img/4.jpg"
+  },
+  {
+    "id": 5,
+    "judul": "Sleek One Box",
+    "coloring": "bg-soft",
+    "image": "img/5.jpg"
+  },
+  {
+    "id": 6,
+    "judul": "Eco, Comfort, Smart dan Sport",
+    "coloring": "bg-soft",
+    "image": "img/test.jpg"
+  },
+  {
+    "id": 7,
+    "judul": "Distinctive H Rear Lamp",
+    "coloring": "bg-soft",
+    "image": "img/1.webp"
+  },
+  {
+    "id": 8,
+    "judul": "mesin Smartstream G1.5 MPI Inline 4 cylinder",
+    "coloring": "bg-soft",
+    "image": "img/3.jpg"
+  },
+  {
+    "id": 9,
+    "judul": "transmisi IVT",
+    "coloring": "bg-soft",
+    "image": "img/4.jpg"
+  },
+  {
+    "id": 10,
+    "judul": "Horizontal DRL",
+    "coloring": "bg-soft",
+    "image": "img/5.jpg"
+  }
+]

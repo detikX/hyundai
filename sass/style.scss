@@ -20,7 +20,7 @@ section {
   width: auto;
   padding: 0;
   position: relative;
-  z-index: 2;
+  z-index: 102;
   background: #84a2ba;
   @media screen and (max-width: 766px) {
     height: 70vh;
@@ -87,6 +87,7 @@ section {
 
 .paragraph {
   background: $blue;
+  z-index: 104;
   p {
     font-size: 16px;
     @media screen and (max-width: 766px) {
@@ -519,7 +520,22 @@ small {
   }
 }
 
+main {
+  .progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 4px;
+    background-color: purple;
+    transition: all linear 0.1s;
+    min-width: 1%;
+  }
+}
+
 .usp {
+  position: relative;
+  z-index: 105;
   @media screen and (max-width: 766px) {
     position: relative;
     z-index: 101;
