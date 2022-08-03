@@ -996,6 +996,9 @@ main {
     opacity: 1;
     pointer-events: auto;
     transition: transform 400ms 1200ms ease, opacity 400ms 1200ms ease;
+    @media screen and (max-width: 766px) {
+      left: -50px;
+    }
   }
   .pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-1 {
     opacity: 0;
