@@ -102,14 +102,14 @@ section {
   }
   @media screen and (max-width: 766px) {
     padding: 16px 0;
-    z-index: 101;
+    z-index: 115;
   }
   position: relative;
 }
 
 .timeline {
   // background: #b0ffe3;
-  z-index: 2;
+  z-index: 112;
   @media screen and (max-width: 766px) {
     z-index: 112;
   }
@@ -460,6 +460,8 @@ small {
 
 .scroll-magic {
   transition: all 0.3s ease-in;
+  position: relative;
+  z-index: 115;
   /* the slides */
   .slick-dots {
     bottom: 4px;
@@ -543,7 +545,7 @@ main {
 
 .usp {
   position: relative;
-  z-index: 105;
+  z-index: 115;
   @media screen and (max-width: 766px) {
     position: relative;
     z-index: 113;
@@ -631,6 +633,7 @@ main {
 }
 
 .test-skrollr {
+  position: relative;
   z-index: 102;
   .content {
     position: fixed;
@@ -671,6 +674,7 @@ main {
 .typing {
   min-height: 100vh;
   position: relative;
+  z-index: 115;
   &::after {
     position: absolute;
     left: 0;
@@ -721,6 +725,8 @@ main {
 // }
 
 .price-hyundai {
+  position: relative;
+  z-index: 115;
   a {
     cursor: pointer;
     transition: all 200ms linear;
@@ -819,7 +825,7 @@ main {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     perspective: 1000px;
-    margin-top: 90px;
+    // margin-top: 90px;
   }
   .card-3d-wrapper {
     width: 100%;
