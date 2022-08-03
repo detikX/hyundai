@@ -4,7 +4,7 @@ $(() => {
         $(".preloader").remove();
     });
     new WOW().init();
-    // skrollr.init();
+    skrollr.init();
     // const tilt = $(".js-tilt").tilt();
     // // tilt.on("change", callback); // parameters: event, transforms
     // // tilt.on("tilt.mouseLeave", callback); // parameters: event
@@ -118,10 +118,6 @@ window.addEventListener("scroll", function() {
 //   // element.classList.add("mystyle");
 // });
 
-// Shout out to ihatetomatoes
-// Where I learned ScrollMagic basics:
-// https://www.youtube.com/watch?v=QpedXxC0e5o
-
 $(document).ready(function() {
     var controller = new ScrollMagic.Controller();
 
@@ -130,6 +126,22 @@ $(document).ready(function() {
             duration: "100%",
         })
         .setClassToggle(".coba__img", "full-page")
+        .addIndicators() // remove this before publishing
+        .addTo(controller);
+
+    var car1 = new ScrollMagic.Scene({
+            triggerElement: "#car1",
+            duration: "100%",
+        })
+        .setClassToggle(".showing", "red-bg")
+        .addIndicators() // remove this before publishing
+        .addTo(controller);
+
+    var three = new ScrollMagic.Scene({
+            triggerElement: "#three",
+            duration: "100%",
+        })
+        .setClassToggle(".all-skrollr", "test-skrollr")
         .addIndicators() // remove this before publishing
         .addTo(controller);
 });
@@ -148,3 +160,30 @@ var lala = $(".coba__img").slick({
 setTimeout(() => {
     lala;
 }, 10);
+
+var myText =
+    "Hyundai melalui Owner Assurance Program memberikan perlindungan ekstra bagi kendaraan dan juga pengguna Hyundai STARGAZER. Kini semakin tenang punya Hyundai.";
+let myTextLength = myText.length;
+
+function typing(displayedLength) {
+    if (displayedLength <= myTextLength) {
+        $("#text").text(myText.substring(0, displayedLength));
+    }
+}
+
+var controller = new ScrollMagic.Controller();
+var typewritingOnScroll = new TimelineMax();
+
+var typewritingScene = new ScrollMagic.Scene({
+        triggerElement: "#text",
+        duration: 300,
+    })
+    .on("progress", function() {
+        let scrollProgress = Math.ceil(typewritingScene.progress() * myTextLength);
+        typing(scrollProgress);
+    })
+
+.setPin("#text")
+    .addIndicators()
+    .setTween(typewritingOnScroll)
+    .addTo(controller);
