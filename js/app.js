@@ -136,7 +136,7 @@ $(document).ready(function () {
     duration: "100%",
   })
     .setClassToggle(".coba__img", "full-page")
-    .addIndicators() // remove this before publishing
+    //.addIndicators() // remove this before publishing
     .addTo(controller);
 
   //   var car1 = new ScrollMagic.Scene({
@@ -152,7 +152,7 @@ $(document).ready(function () {
     duration: "100%",
   })
     .setClassToggle(".all-skrollr", "test-skrollr")
-    .addIndicators() // remove this before publishing
+    // .addIndicators() // remove this before publishing
     .addTo(controller);
 });
 
