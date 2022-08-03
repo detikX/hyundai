@@ -338,7 +338,7 @@
 										<!-- <p class="mb-4">per person</p> -->
 										<!-- <p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p> -->
 										<h2 class="mb-4">200 Juta</h2>
-										<a href="#0" class="link">Daftar Harga</a>
+										<div class="link" data-toggle="modal" data-target="#daftarHarga">Daftar Harga</div>
 										<div class="img-wrap img-2">
 											<img src="https://assets.codepen.io/1462889/sea.png" alt="">
                       <!-- <img src="img/gar.png" alt=""> -->
@@ -396,6 +396,31 @@
         </div>
       </section>
     </main>
+
+    <div class="modal fade" id="daftarHarga" tabindex="-1" aria-labelledby="daftarHargaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="modal-image"><img src="img/mobil.png" alt=""></div>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>Harga</li>
+                  <li>kaka</li>
+                  <li>kakaka</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
