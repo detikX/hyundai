@@ -39,7 +39,7 @@ $(document).on("scroll", function () {
 // pageHeight = whole page height minus viewable page height
 // progress = pixels from top / page-height * 100
 
-var test = screen.width < 768 ? 2 : 50;
+var test = screen.width < 768 ? 2 : 20;
 
 $(window)
   .scroll(function () {
@@ -47,17 +47,23 @@ $(window)
       i = $("body"),
       t = $(".section");
     s = o.scrollTop() + o.height() / test;
-    console.log("o.scrollTop()", o.scrollTop());
-    console.log("o.height", o.height());
+    // console.log("o.scrollTop()", o.scrollTop());
+    // console.log("o.height", o.height());
     t.each(function () {
-      // console.log("top", $(this).position().top);
+      console.log("top", $(this).position().top);
+      console.log("height", $(this).height());
       console.log("s", s);
-      console.log("trigger1", $(this).position().top + $(this).height());
+      // console.log("trigger1", $(this).position().top + $(this).height());
       $(this).position().top <= s &&
         $(this).position().top + $(this).height() > s &&
         i.removeClass(
+          function (o, i) {
+            return i.match(/(^|\s)color-\s+/g) || [].join(" ");
+          },
           $(".section").removeClass("active"),
           $(this).addClass("active")
+          // console.log($(this))
+          // console.log("this?")
         );
     });
   })

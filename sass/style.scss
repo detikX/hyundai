@@ -110,6 +110,9 @@ section {
 .timeline {
   // background: #b0ffe3;
   z-index: 2;
+  @media screen and (max-width: 766px) {
+    z-index: 112;
+  }
   //section
   .section {
     display: flex;
@@ -134,25 +137,25 @@ section {
       display: flex;
       &-inner {
         &.samp1 {
-          background-image: url("../img/1.webp");
+          background-image: url("../img/mobil-white.png");
           // display: ;
           opacity: 0 !important;
           display: none !important;
         }
         &.samp2 {
-          background-image: url("../img/1.webp");
+          background-image: url("../img/mobil-white.png");
         }
         &.samp3 {
-          background-image: url("../img/ambien.jpg");
+          background-image: url("../img/mobil-white.png");
         }
         &.samp4 {
-          background-image: url("../img/2.jpg");
+          background-image: url("../img/mobil-white.png");
         }
         &.samp5 {
           background-image: url("../img/mobil.png");
         }
         &.samp8 {
-          background-image: url("../img/2.jpg");
+          background-image: url("../img/mobil-white.png");
         }
         height: 70vh;
         position: fixed;
@@ -543,7 +546,7 @@ main {
   z-index: 105;
   @media screen and (max-width: 766px) {
     position: relative;
-    z-index: 101;
+    z-index: 113;
     background: $blue;
   }
   .all {
