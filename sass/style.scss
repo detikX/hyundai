@@ -687,5 +687,10 @@ main {
   p {
     font-size: 21px;
     color: white;
+    @media screen and (max-width: 766px) {
+      width: 320px !important;
+      margin: 0 8px !important;
+      text-align: center;
+    }
   }
 }

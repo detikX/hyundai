@@ -194,7 +194,7 @@ var typewritingScene = new ScrollMagic.Scene({
   })
 
   .setPin("#text")
-  .addIndicators()
+  //   .addIndicators()
   .setTween(typewritingOnScroll)
   .addTo(controller);
 
