@@ -1156,6 +1156,11 @@ main {
         @media screen and (max-width: 766px) {
           margin-top: 16px;
         }
+        h4 {
+          @media screen and (max-width: 766px) {
+            margin: 16px 0;
+          }
+        }
       }
     }
   }
