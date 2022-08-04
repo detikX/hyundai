@@ -219,7 +219,7 @@ $.ajax({
               <div class="card__help">
                 <img src="${image}" alt="${judul}" title="${judul}" loading="lazy" />
               </div>
-              <h3>${judul}</h3>
+              <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">${judul}</h3>
             </div>
         `);
     }
