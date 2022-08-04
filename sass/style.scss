@@ -1129,23 +1129,48 @@ main {
       opacity: 0.8 !important;
     }
   }
+  &-content {
+    border-radius: 16px;
+  }
   &-body {
     padding: 0;
     ul {
       padding: 0 8px;
-      margin: 16px;
+      margin: 4px 16px;
       li {
         padding: 0;
       }
     }
   }
+  .all-img {
+    display: block;
+    .inline-img {
+      width: 49%;
+      vertical-align: middle;
+      margin-right: 4px;
+      display: inline-block;
+      @media screen and (max-width: 766px) {
+        width: 100%;
+      }
+      table {
+        @media screen and (max-width: 766px) {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
   &-image {
     width: 100%;
+    border-radius: 16px 0 0 16px;
     height: 100%;
-    background: rgba($color: #000000, $alpha: 0.2);
+    background: rgba($color: $blue, $alpha: 0.9);
+    @media screen and (max-width: 766px) {
+      border-radius: 16px 16px 0 0;
+    }
     img {
       width: 100%;
       height: 100%;
+      border-radius: 16px 0 0 16px;
       object-fit: contain;
     }
   }
